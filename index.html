@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Khoi Nguyen | Research Portfolio</title>
+    <meta name="description" content="Undergraduate Research Portfolio of Thanh Khoi Nguyen">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Thanh Khoi Nguyen</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-image-container">
+                <img src="assets/profile.jpg" alt="Thanh Khoi Nguyen" class="hero-image">
+            </div>
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Thanh Khoi Nguyen</h1>
+            <h2 class="hero-title">Undergraduate Researcher</h2>
+            <p class="hero-subtitle">B.Sc. Computer Science (Honor Programme) at VNU-HCMUS</p>
+            <p class="hero-description">
+                My research lies at the intersection of 3D vision, multimodal understanding, and spatial reasoning. I build systems that jointly reason over geometry, appearance, and language in dynamic, real-world environments.
+            </p>
+            <div class="hero-buttons">
+                <a href="#publications" class="btn btn-primary">View Publications</a>
+                <a href="https://github.com/NTKHarry" target="_blank" class="btn btn-secondary">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+        <!-- Decorative Background Elements -->
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container fade-in">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am currently a third-year undergraduate in the IT Talent Programme at the University of Science, VNU-HCM (HCMUS) — admitted among the top 45 students selected faculty-wide, maintaining a GPA of 3.94/4.0.
+                    </p>
+                    <p>
+                        I am broadly interested in building systems that jointly reason over geometry, appearance, and language. Systems capable of understanding not merely what a scene looks like, but what it contains, how it is structured, and how it relates to the world described in natural language. 
+                    </p>
+                    <p>
+                        I see <strong>3D Gaussian Splatting</strong> as a particularly compelling representation for this kind of understanding. My goal is to push GS-based representations beyond novel view synthesis toward richer scene understanding—enabling object-level reasoning, part-level retrieval, and language-grounded spatial analysis in dynamic, real-world environments.
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                        <p>B.Sc. Computer Science<br>Expected May 2027 (GPA: 3.94/4.0)</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        <h3>Research Focus</h3>
+                        <p>3D Vision, Multimodal Understanding, Spatial Reasoning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience bg-light" id="experience">
+        <div class="container fade-in">
+            <h2 class="section-title">Research Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Early 2026 – Present</span>
+                        <h3>Research Student</h3>
+                        <p class="timeline-org">Saigon AI Hub (SAIH), Applied AI Lab (Google Labs' AI Futures Fund)</p>
+                        <p class="timeline-desc">
+                            Selected into one of 10 inaugural research groups at SAIH — Vietnam’s first open AI research hub. Conducting research on multimodal sport reasoning and analysis: building models that integrate visual, temporal, and language signals to understand and reason over complex sports scenarios in video.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jun 2024 – Present</span>
+                        <h3>Research Student</h3>
+                        <p class="timeline-org">Software Engineering Lab (SELab), HCMUS</p>
+                        <p class="timeline-desc">
+                            Supervised by Prof. Minh Triet Tran. Led work on metric-scale athlete localization from single broadcast frames (1st place on SoccerNet 2026 Spiideo SynLoc). Contributed to TreeSoc for tree-structured video reasoning, automated news thumbnail generation, and event-centered lifelog retrieval.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="section publications" id="publications">
+        <div class="container fade-in">
+            <h2 class="section-title">Publications & Projects</h2>
+            <div class="grid project-grid">
+                
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="project-tag">Accepted, 2026</span>
+                        <h3>Action-Aligned Retrieval with Pairwise Multimodal Reranking for Text-Based Person Anomaly Search</h3>
+                        <p class="authors"><strong>Thanh-Khoi Nguyen*</strong>, Thanh-Nhan Vo*, Trong-Thuan Nguyen, Minh-Triet Tran</p>
+                        <p class="venue">AI City Workshop @ ECCV 2026</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-link"></i> View Paper</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="project-tag">Accepted, 2026</span>
+                        <h3>A Top-Down Framework for Metric-Scale Athlete Localization from Single Broadcast Frames</h3>
+                        <p class="authors"><strong>Thanh-Khoi Nguyen*</strong>, Hoang-Phuc Nguyen, Linh-Huynh, Minh-Triet Tran</p>
+                        <p class="venue">Proc. ICMV 2026 (CORE C; SPIE-indexed)</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-link"></i> View Paper</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="project-tag">Accepted, 2026</span>
+                        <h3>TreeSoc: Tree-Structured Dynamic Reasoning and Tool Synergy for Soccer Video Understanding</h3>
+                        <p class="authors">Thanh-Nhan Vo, <strong>Thanh-Khoi Nguyen</strong>, Trong-Thuan Nguyen, Trung-Hoang Le, Minh-Triet Tran</p>
+                        <p class="venue">Proc. ICMV 2026 (CORE C; SPIE-indexed)</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-link"></i> View Paper</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="project-tag">Accepted, 2026</span>
+                        <h3>SnapSeek 4.0: Bridging Temporal Dynamics and Regional Semantics for Interactive Lifelog Retrieval</h3>
+                        <p class="authors">Minh-Quan Ho-Le, <strong>Thanh Khoi Nguyen</strong>, Van-Tu Ninh, Cathal Gurrin, Minh-Triet Tran</p>
+                        <p class="venue">Proc. ACM LSC Workshop @ ICMR 2026 (CORE B)</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-link"></i> View Paper</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="project-tag">Accepted, Nov 2025</span>
+                        <h3>From Text to Thumbnail: A Unified Framework for Automated News Image Generation and Evaluation</h3>
+                        <p class="authors"><strong>Thanh Khoi Nguyen*</strong>, Hai Dang Nguyen, Minh Triet Tran</p>
+                        <p class="venue">Proc. SOICT 2025</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-link"></i> View Paper</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="project-tag">Published, Jun 2025</span>
+                        <h3>SHREC GS-3DORC: Towards the advancements of 3D Gaussian Splatting object part retrieval</h3>
+                        <p class="authors">Thien Phuc Tran, Minh Quang Nguyen, <strong>Thanh Khoi Nguyen</strong>, Nam Quan Nguyen, Minh Triet Tran</p>
+                        <p class="venue">Computers & Graphics (Elsevier, Q2), Vol. 132</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-link"></i> View Paper</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="section awards bg-light" id="awards">
+        <div class="container fade-in">
+            <h2 class="section-title">Honors & Awards</h2>
+            <div class="grid research-grid">
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <h3>1st Place, SoccerNet 2026 Spiideo SynLoc Challenge</h3>
+                    <p>International sports AI benchmark for single-frame world-coordinate athlete localization; 97.67 mAP, surpassing baseline by over 21%.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-medal"></i></div>
+                    <h3>Top 3, ACM MM 2026 TRIDENT Grand Challenge</h3>
+                    <p>Tri-modal explainable deepfake forensics benchmark at ACM Multimedia (CORE A*).</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-star"></i></div>
+                    <h3>Best Paper Award (YSC 2026)</h3>
+                    <p>Selected from all accepted submissions at the HCMUS university-level Youth Science Conference.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-award"></i></div>
+                    <h3>Odon-Vallet Scholarship</h3>
+                    <p>Nationally selective scholarship for exceptional academic merit in Vietnam (Awarded in 2023 & 2026).</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <h3>Dean’s Honor List</h3>
+                    <p>Ranked in the top 3% (2024) and top 2% (2025) of students in the faculty for academic excellence.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-atom"></i></div>
+                    <h3>3rd Place, National Physics Exam</h3>
+                    <p>Top prize tier awarded to 12–15% of all national finalists across Vietnam (2023).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container fade-in">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span>C/C++</span>
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>Kotlin</span>
+                        <span>SQL</span>
+                        <span>R</span>
+                        <span>LaTeX</span>
+                        <span>Markdown</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Tools</h3>
+                    <div class="skill-tags">
+                        <span>PyTorch</span>
+                        <span>TensorFlow</span>
+                        <span>Keras</span>
+                        <span>Hugging Face</span>
+                        <span>Docker</span>
+                        <span>Git</span>
+                        <span>Android Studio</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Core Competencies</h3>
+                    <div class="skill-tags">
+                        <span>Scientific Research</span>
+                        <span>Technical Writing</span>
+                        <span>Machine Learning</span>
+                        <span>Computer Vision</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-socials">
+                <a href="https://github.com/NTKHarry" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/NTKHarry" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:nguyenthanhkhoi123x321@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2026 Thanh Khoi Nguyen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
