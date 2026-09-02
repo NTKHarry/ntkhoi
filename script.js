@@ -31,24 +31,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Intersection Observer for Fade-In Animations ---
-    const fadeElements = document.querySelectorAll('.fade-in');
+    // --- Intersection Observer for Reveal Animations ---
+    const revealElements = document.querySelectorAll('.reveal');
     
-    const fadeOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
+    const revealOptions = {
+        threshold: 0.15, // Trigger when 15% of the element is visible
+        rootMargin: "0px 0px -50px 0px" // Trigger slightly before the bottom of the viewport
     };
     
-    const fadeObserver = new IntersectionObserver((entries, observer) => {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
+                entry.target.classList.add('active');
                 observer.unobserve(entry.target); // Only animate once
             }
         });
-    }, fadeOptions);
+    }, revealOptions);
     
-    fadeElements.forEach(el => {
-        fadeObserver.observe(el);
+    revealElements.forEach(el => {
+        revealObserver.observe(el);
     });
+
+    // --- Initial Reveal for Hero Section ---
+    // Manually trigger the hero section animation after a slight delay
+    setTimeout(() => {
+        const heroContent = document.querySelector('.hero-content');
+        if (heroContent && !heroContent.classList.contains('active')) {
+            heroContent.classList.add('active');
+        }
+    }, 100);
 });
